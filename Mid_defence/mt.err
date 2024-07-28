@@ -1,0 +1,5 @@
+>>> Warning 203 "mt.c" Line 145(1,1): Condition always TRUE
+>>> Warning 202 "mt.c" Line 23(18,22): Variable never used:   Rldr
+      Memory usage:   ROM=36%      RAM=20% - 27%
+      0 Errors,  2 Warnings.
+Build Successful.

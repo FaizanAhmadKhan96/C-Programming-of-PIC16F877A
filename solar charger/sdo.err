@@ -1,0 +1,88 @@
+>>> Warning 203 "sdo.c" Line 145(1,1): Condition always TRUE
+*** Error 5 "sdo.c" Line 253(7,9): Character constant constructed incorrectly
+*** Error 5 "sdo.c" Line 253(11,13): Character constant constructed incorrectly
+*** Error 12 "sdo.c" Line 253(7,9): Undefined identifier   ff
+*** Error 12 "sdo.c" Line 255(7,8): Undefined identifier  -- delay
+*** Error 12 "sdo.c" Line 258(15,25): Undefined identifier   initialize
+*** Error 51 "sdo.c" Line 262(5,9): A numeric expression must appear here
+*** Error 12 "sdo.c" Line 266(15,18): Undefined identifier   off
+*** Error 12 "sdo.c" Line 267(2,12): Undefined identifier   MOSFET_OFF
+*** Error 51 "sdo.c" Line 270(2,6): A numeric expression must appear here
+*** Error 12 "sdo.c" Line 272(5,15): Undefined identifier   boost_time
+*** Error 12 "sdo.c" Line 274(15,25): Undefined identifier   float_mode
+*** Error 51 "sdo.c" Line 276(2,6): A numeric expression must appear here
+*** Error 12 "sdo.c" Line 278(11,17): Undefined identifier   Vboost
+*** Error 12 "sdo.c" Line 280(15,21): Undefined identifier   absorp
+*** Error 12 "sdo.c" Line 281(2,11): Undefined identifier   MOSFET_ON
+*** Error 12 "sdo.c" Line 282(2,14): Undefined identifier   boost_millis
+*** Error 51 "sdo.c" Line 285(2,6): A numeric expression must appear here
+*** Error 12 "sdo.c" Line 287(15,19): Undefined identifier   bulk
+*** Error 12 "sdo.c" Line 288(2,11): Undefined identifier   MOSFET_ON
+*** Error 51 "sdo.c" Line 295(2,6): A numeric expression must appear here
+*** Error 5 "sdo.c" Line 295(7,9): Character constant constructed incorrectly
+*** Error 5 "sdo.c" Line 295(12,14): Character constant constructed incorrectly
+*** Error 12 "sdo.c" Line 299(15,18): Undefined identifier   off
+*** Error 12 "sdo.c" Line 300(2,12): Undefined identifier   MOSFET_OFF
+*** Error 51 "sdo.c" Line 303(2,6): A numeric expression must appear here
+*** Error 12 "sdo.c" Line 305(12,18): Undefined identifier   Vboost
+*** Error 12 "sdo.c" Line 307(6,16): Undefined identifier   boost_time
+*** Error 12 "sdo.c" Line 309(15,25): Undefined identifier   float_mode
+*** Error 12 "sdo.c" Line 310(2,11): Undefined identifier   MOSFET_ON
+*** Error 51 "sdo.c" Line 313(1,5): A numeric expression must appear here
+*** Error 12 "sdo.c" Line 315(14,19): Undefined identifier   boost
+*** Error 12 "sdo.c" Line 316(1,10): Undefined identifier   MOSFET_ON
+*** Error 12 "sdo.c" Line 317(1,11): Undefined identifier   boost_time
+*** Error 51 "sdo.c" Line 321(1,5): A numeric expression must appear here
+*** Error 12 "sdo.c" Line 424(10,14): Undefined identifier   Imax
+*** Error 12 "sdo.c" Line 426(1,7): Undefined identifier   error3
+*** Error 12 "sdo.c" Line 427(1,4): Undefined identifier   inc
+*** Error 12 "sdo.c" Line 428(6,9): Undefined identifier   inc
+*** Error 12 "sdo.c" Line 429(17,18): Undefined identifier  -- set_pwmdutycycle
+*** Error 51 "sdo.c" Line 435(1,5): A numeric expression must appear here
+*** Error 12 "sdo.c" Line 437(1,13): Undefined identifier   boost_millis
+*** Error 12 "sdo.c" Line 438(73,77): Undefined identifier   Imax
+*** Error 12 "sdo.c" Line 441(14,17): Undefined identifier   off
+*** Error 12 "sdo.c" Line 442(1,11): Undefined identifier   MOSFET_OFF
+*** Error 51 "sdo.c" Line 445(1,5): A numeric expression must appear here
+*** Error 12 "sdo.c" Line 447(12,18): Undefined identifier   Vboost
+*** Error 12 "sdo.c" Line 449(14,18): Undefined identifier   bulk
+*** Error 12 "sdo.c" Line 450(1,10): Undefined identifier   MOSFET_ON
+*** Error 51 "sdo.c" Line 453(1,5): A numeric expression must appear here
+*** Error 12 "sdo.c" Line 455(4,14): Undefined identifier   boost_time
+*** Error 12 "sdo.c" Line 457(14,24): Undefined identifier   float_mode
+*** Error 12 "sdo.c" Line 458(1,10): Undefined identifier   MOSFET_ON
+*** Error 51 "sdo.c" Line 461(1,5): A numeric expression must appear here
+*** Error 12 "sdo.c" Line 463(10,16): Undefined identifier   Vboost
+*** Error 12 "sdo.c" Line 465(1,7): Undefined identifier   error1
+*** Error 12 "sdo.c" Line 466(1,4): Undefined identifier   inc
+*** Error 12 "sdo.c" Line 467(6,9): Undefined identifier   inc
+*** Error 12 "sdo.c" Line 468(17,18): Undefined identifier  -- set_pwmdutycycle
+*** Error 12 "sdo.c" Line 469(1,11): Undefined identifier   boost_time
+*** Error 12 "sdo.c" Line 471(10,14): Undefined identifier   Imax
+*** Error 12 "sdo.c" Line 473(1,7): Undefined identifier   error3
+*** Error 12 "sdo.c" Line 474(1,4): Undefined identifier   inc
+*** Error 12 "sdo.c" Line 475(6,9): Undefined identifier   inc
+*** Error 12 "sdo.c" Line 476(17,18): Undefined identifier  -- set_pwmdutycycle
+*** Error 51 "sdo.c" Line 483(1,5): A numeric expression must appear here
+*** Error 12 "sdo.c" Line 486(14,17): Undefined identifier   off
+*** Error 12 "sdo.c" Line 487(1,11): Undefined identifier   MOSFET_OFF
+*** Error 51 "sdo.c" Line 490(1,5): A numeric expression must appear here
+*** Error 12 "sdo.c" Line 492(11,17): Undefined identifier   Vfloat
+*** Error 12 "sdo.c" Line 494(14,18): Undefined identifier   bulk
+*** Error 12 "sdo.c" Line 495(1,10): Undefined identifier   MOSFET_ON
+*** Error 51 "sdo.c" Line 498(1,5): A numeric expression must appear here
+*** Error 12 "sdo.c" Line 500(12,18): Undefined identifier   Vfloat
+*** Error 12 "sdo.c" Line 502(1,7): Undefined identifier   error2
+*** Error 12 "sdo.c" Line 503(1,4): Undefined identifier   inc
+*** Error 12 "sdo.c" Line 504(6,9): Undefined identifier   inc
+*** Error 12 "sdo.c" Line 505(17,18): Undefined identifier  -- set_pwmdutycycle
+*** Error 12 "sdo.c" Line 506(10,14): Undefined identifier   Imax
+*** Error 12 "sdo.c" Line 508(1,7): Undefined identifier   error3
+*** Error 12 "sdo.c" Line 509(1,4): Undefined identifier   inc
+*** Error 12 "sdo.c" Line 510(6,9): Undefined identifier   inc
+*** Error 12 "sdo.c" Line 511(17,18): Undefined identifier  -- set_pwmdutycycle
+*** Error 51 "sdo.c" Line 517(1,8): A numeric expression must appear here
+*** Error 12 "sdo.c" Line 519(1,11): Undefined identifier   MOSFET_OFF
+*** Error 43 "sdo.c" Line 525(1,2): Expecting a declaration
+      85 Errors,  1 Warnings.
+Build Failed.

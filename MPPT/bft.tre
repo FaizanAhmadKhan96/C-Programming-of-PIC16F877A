@@ -1,0 +1,57 @@
+ÀÄbft
+   ÀÄMAIN  0/604  Ram=4
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄlcd_init  0/22  Ram=1
+      ³  ÃÄ@delay_ms1  0/20  Ram=1
+      ³  ÃÄlcd_cmd  0/23  Ram=1
+      ³  ÃÄlcd_cmd  0/23  Ram=1
+      ³  ÃÄlcd_cmd  0/23  Ram=1
+      ³  ÀÄ@delay_ms1  0/20  Ram=1
+      ÃÄlcd_line1  0/6  Ram=2
+      ³  ÀÄlcd_cmd  0/23  Ram=1
+      ÃÄ@PSTRINGC7_898  0/86  Ram=4
+      ³  ÃÄlcd_data  0/23  Ram=1
+      ³  ÀÄlcd_data  0/23  Ram=1
+      ÃÄlcd_line2  0/6  Ram=2
+      ³  ÀÄlcd_cmd  0/23  Ram=1
+      ÃÄ@PSTRINGC7_898  0/86  Ram=4
+      ³  ÀÄ*
+      ÃÄ@delay_ms1  0/20  Ram=1
+      ÃÄlcd_rscrol  0/18  Ram=3
+      ³  ÃÄlcd_cmd  0/23  Ram=1
+      ³  ÀÄ@delay_ms1  0/20  Ram=1
+      ÃÄlcd_cmd  0/23  Ram=1
+      ÃÄ@delay_ms1  0/20  Ram=1
+      ÃÄlcd_line1  0/6  Ram=2
+      ³  ÀÄ*
+      ÃÄ@PSTRINGC7_898  0/86  Ram=4
+      ³  ÀÄ*
+      ÃÄlcd_line2  0/6  Ram=2
+      ³  ÀÄ*
+      ÃÄ@PSTRINGC7_898  0/86  Ram=4
+      ³  ÀÄ*
+      ÃÄ@delay_ms1  0/20  Ram=1
+      ÃÄlcd_rscrol  0/18  Ram=3
+      ³  ÀÄ*
+      ÃÄlcd_cmd  0/23  Ram=1
+      ÃÄ@delay_ms1  0/20  Ram=1
+      ÃÄ@ITOF  0/29  Ram=2
+      ÃÄ@MULFF  0/117  Ram=13
+      ÃÄ@DIVFF  0/202  Ram=14
+      ÃÄ@DIVFF  0/202  Ram=14
+      ÃÄ@ITOF  0/29  Ram=2
+      ÃÄ@MULFF  0/117  Ram=13
+      ÃÄ@ADDFF  0/321  Ram=16
+      ÃÄ@DIVFF  0/202  Ram=14
+      ÃÄ@ADDFF  0/321  Ram=16
+      ÃÄ@ADDFF  0/321  Ram=16
+      ÃÄ@DIVFF  0/202  Ram=14
+      ÃÄ@DIVFF  0/202  Ram=14
+      ÃÄ@FLT  0/63  Ram=10
+      ÃÄ@FLT  0/63  Ram=10
+      ÃÄ@FLT  0/63  Ram=10
+      ÃÄ@FLT  0/63  Ram=10
+      ÃÄ@FLT  0/63  Ram=10
+      ÃÄ@FLT  0/63  Ram=10
+      ÃÄ@FLT  0/63  Ram=10
+      ÀÄ@FLT  0/63  Ram=10

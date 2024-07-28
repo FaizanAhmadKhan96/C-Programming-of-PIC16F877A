@@ -1,0 +1,173 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+015     CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+020-021 strtok.save
+022-025 _Randseed
+026-029 adc_value
+02A-02D voltmeter1
+02E-031 voltmeter2
+032-035 ammeter1
+036-039 ammeter2
+03A-03D pin
+03E-041 Pout
+042     @TRIS_C
+043     MAIN.i
+044     lcd_line2.position
+044     lcd_line1.position
+044-047 @FLT.P1
+044     @PSTRINGCN7_895.P2
+044-045 @ITOF.P3
+044-047 @PRINTF_L32D_895FPFPF.P4
+044     lcd_rscrol.i
+044     lcd_init.@SCRATCH1
+044     MAIN.@SCRATCH1
+044     @PSTRINGC7_895.@SCRATCH1
+045     lcd_rscrol.count
+045     lcd_line1.@SCRATCH1
+045     lcd_line2.@SCRATCH1
+045     MAIN.@SCRATCH2
+045     @PSTRINGC7_895.@SCRATCH2
+045     @PSTRINGCN7_895.@SCRATCH1
+046     lcd_cmd.i
+046     lcd_rscrol.@SCRATCH1
+046     MAIN.@SCRATCH3
+046     @PSTRINGC7_895.@SCRATCH3
+046     @PSTRINGCN7_895.@SCRATCH2
+047     @delay_ms1.P1
+047     MAIN.@SCRATCH4
+047     @PSTRINGC7_895.@SCRATCH4
+047     @PSTRINGCN7_895.@SCRATCH3
+048-04B @ADDFF.P1
+048-04B @DIVFF.P2
+048-04B @FLT.P3
+048     @PRINTF_L32D_895FPFPF.P4
+048     @PSTRINGCN7_895.@SCRATCH4
+049     @PRINTF_L32D_895FPFPF.@SCRATCH1
+04A     @PRINTF_L32D_895FPFPF.@SCRATCH2
+04B     @PRINTF_L32D_895FPFPF.@SCRATCH3
+04C-04F @ADDFF.P1
+04C-04F @DIVFF.P2
+04C     @FLT.@SCRATCH1
+04C     @PRINTF_L32D_895FPFPF.@SCRATCH4
+04D     @FLT.@SCRATCH2
+04D     @PRINTF_L32D_895FPFPF.@SCRATCH5
+04E     @PRINTF_L32D_895FPFPF.@SCRATCH6
+04F     @PRINTF_L32D_895FPFPF.@SCRATCH7
+050     @ADDFF.@SCRATCH1
+050     @DIVFF.@SCRATCH1
+050     @PRINTF_L32D_895FPFPF.@SCRATCH8
+051     lcd_data.i
+051-054 @FTOSD.P1
+051-054 @MULFF.P2
+051-054 @DIV3232.P3
+051     @ADDFF.@SCRATCH2
+051     @DIVFF.@SCRATCH2
+052     @ADDFF.@SCRATCH3
+052     @DIVFF.@SCRATCH3
+053     @ADDFF.@SCRATCH4
+053     @DIVFF.@SCRATCH4
+054     @ADDFF.@SCRATCH5
+054     @DIVFF.@SCRATCH5
+055-058 @MULFF.P1
+055-058 @DIV3232.P2
+055     @ADDFF.@SCRATCH6
+055     @DIVFF.@SCRATCH6
+055     @FTOSD.@SCRATCH1
+056     @ADDFF.@SCRATCH7
+057     @ADDFF.@SCRATCH8
+059     @MULFF.@SCRATCH1
+059     @DIV3232.@SCRATCH1
+05A     @MULFF.@SCRATCH2
+05A     @DIV3232.@SCRATCH2
+05B     @MULFF.@SCRATCH3
+05B     @DIV3232.@SCRATCH3
+05C     @MULFF.@SCRATCH4
+05C     @DIV3232.@SCRATCH4
+05D     @MULFF.@SCRATCH5
+05D     @DIV3232.@SCRATCH5
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @const914.call
+000008  @const916.call
+000010  @const917.call
+000017  @const918.call
+00001C  @const919.call
+000023  @const920.call
+000028  @const921.call
+00002D  @const925.call
+000034  @const936.call
+00003B  @const937.call
+000042  @const939.call
+000049  @const940.call
+000050  @const941.call
+000057  @delay_ms1
+00006B  lcd_cmd
+000082  lcd_init
+000098  lcd_line1
+00009E  lcd_data
+0000B5  @PSTRINGC7_895
+00010B  lcd_line2
+000111  lcd_rscrol
+000123  @ITOF
+000140  @MULFF
+0001B5  @DIVFF
+00027F  @ADDFF
+0003C0  @FLT
+000401  @PSTRINGCN7_895
+000458  @DIV3232
+0004A7  @PRINTF_L32D_895FPFPF
+0004CE  @FTOSD
+000800  @cinit1
+000800  MAIN
+00080A  @cinit2
+0136  StrtoulGO
+0136  StrtolGO
+
+Project Directory:
+    E:\BEE-7D\Final Year Project\PIC Microcontroller\Test\
+
+Project Files:
+    jkk.c                                                   [08-May-19 16:17  CRC=E9BD6BBB]
+    ..\..\..\..\Program Files (x86)\PIC\Devices\16F877.h    [12-Nov-13 14:35  CRC=ADB5114D]
+    ..\..\..\..\Program Files (x86)\PIC\Drivers\string.h    [29-Jan-19 17:28  CRC=5028CB2B]
+    ..\..\..\..\Program Files (x86)\PIC\Drivers\stddef.h    [16-Jul-10 09:27  CRC=897CEC6C]
+    ..\..\..\..\Program Files (x86)\PIC\Drivers\ctype.h     [03-Jan-08 13:55  CRC=2D1F019F]
+    ..\..\..\..\Program Files (x86)\PIC\Drivers\stdlib.h    [08-Jun-11 14:39  CRC=0B6669CF]
+
+Source signature=B50409DC
+
+Units:
+    jkk (main)
+
+Compiler Settings:
+    Processor:      PIC16F877
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   jkk.xsym
+    Errors:      jkk.err
+    Ext Symbols: jkk.esym
+    INHX8:       jkk.hex
+    Symbols:     jkk.sym
+    List:        jkk.lst
+    Debug/COFF:  jkk.cof
+    Project:     jkk.ccspjt
+    Call Tree:   jkk.tre
+    Statistics:  jkk.STA

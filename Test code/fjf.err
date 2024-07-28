@@ -1,0 +1,4 @@
+>>> Warning 203 "fjf.c" Line 134(1,1): Condition always TRUE
+      Memory usage:   ROM=41%      RAM=20% - 32%
+      0 Errors,  1 Warnings.
+Build Successful.

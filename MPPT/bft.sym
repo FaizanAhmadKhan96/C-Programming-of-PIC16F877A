@@ -1,0 +1,139 @@
+004-005 @WRITE_PROGRAM_MEMORY8.P1
+004-005 @READ_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020-021 strtok.save
+022-025 _Randseed
+026-029 adc_value
+02A-02D voltmeter1
+02E-031 ammeter1
+032     pwm
+033-036 voltageold
+037-03A currentold
+03B-03E deltav
+03F-042 deltai
+043-046 inc
+047-04A cond
+04B     @TRIS_C
+04C     MAIN.i
+04D     lcd_line2.position
+04D-050 @FLT.P1
+04D-04E @ITOF.P2
+04D     lcd_line1.position
+04D     lcd_rscrol.i
+04D-050 @MULFF.P1
+04D     lcd_init.@SCRATCH1
+04D     MAIN.@SCRATCH1
+04D     @PSTRINGC7_898.@SCRATCH1
+04E     lcd_rscrol.count
+04E     lcd_line1.@SCRATCH1
+04E     lcd_line2.@SCRATCH1
+04E     MAIN.@SCRATCH2
+04E     @PSTRINGC7_898.@SCRATCH2
+04F     lcd_cmd.i
+04F     lcd_rscrol.@SCRATCH1
+04F     MAIN.@SCRATCH3
+04F     @PSTRINGC7_898.@SCRATCH3
+050     lcd_data.i
+050     @delay_ms1.P1
+050     MAIN.@SCRATCH4
+050     @PSTRINGC7_898.@SCRATCH4
+051-054 @ADDFF.P1
+051-054 @FLT.P2
+051-054 @DIVFF.P3
+051-054 @MULFF.P4
+055-058 @DIVFF.P1
+055-058 @ADDFF.P2
+055     @MULFF.@SCRATCH1
+055     @FLT.@SCRATCH1
+056     @MULFF.@SCRATCH2
+056     @FLT.@SCRATCH2
+057     @MULFF.@SCRATCH3
+058     @MULFF.@SCRATCH4
+059     @MULFF.@SCRATCH5
+059     @ADDFF.@SCRATCH1
+059     @DIVFF.@SCRATCH1
+05A     @ADDFF.@SCRATCH2
+05A     @DIVFF.@SCRATCH2
+05B     @ADDFF.@SCRATCH3
+05B     @DIVFF.@SCRATCH3
+05C     @ADDFF.@SCRATCH4
+05C     @DIVFF.@SCRATCH4
+05D     @ADDFF.@SCRATCH5
+05D     @DIVFF.@SCRATCH5
+05E     @ADDFF.@SCRATCH6
+05E     @DIVFF.@SCRATCH6
+05F     @ADDFF.@SCRATCH7
+060     @ADDFF.@SCRATCH8
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @const917.call
+000009  @const919.call
+000010  @const920.call
+000015  @const921.call
+00001A  @delay_ms1
+00002E  lcd_cmd
+000045  lcd_init
+00005B  lcd_line1
+000061  lcd_data
+000078  @PSTRINGC7_898
+0000CE  lcd_line2
+0000D4  lcd_rscrol
+0000E6  @ITOF
+000103  @MULFF
+000178  @DIVFF
+000242  @ADDFF
+000383  @FLT
+0003C2  MAIN
+0003C2  @cinit1
+0003CC  @cinit2
+0136  StrtoulGO
+0136  StrtolGO
+
+Project Directory:
+    E:\BEE-7D\Final Year Project\PIC Microcontroller\MPPT\
+
+Project Files:
+    bft.c                                                   [05-Feb-19 22:24  CRC=7731E641]
+    ..\..\..\..\Program Files (x86)\PIC\Devices\16F877.h    [12-Nov-13 14:35  CRC=ADB5114D]
+    ..\..\..\..\Program Files (x86)\PIC\Drivers\string.h    [29-Jan-19 17:28  CRC=5028CB2B]
+    ..\..\..\..\Program Files (x86)\PIC\Drivers\stddef.h    [16-Jul-10 09:27  CRC=897CEC6C]
+    ..\..\..\..\Program Files (x86)\PIC\Drivers\ctype.h     [03-Jan-08 13:55  CRC=2D1F019F]
+    ..\..\..\..\Program Files (x86)\PIC\Drivers\stdlib.h    [08-Jun-11 14:39  CRC=0B6669CF]
+
+Source signature=42788462
+
+Units:
+    bft (main)
+
+Compiler Settings:
+    Processor:      PIC16F877
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   bft.xsym
+    Errors:      bft.err
+    Ext Symbols: bft.esym
+    INHX8:       bft.hex
+    Symbols:     bft.sym
+    List:        bft.lst
+    Debug/COFF:  bft.cof
+    Project:     bft.ccspjt
+    Call Tree:   bft.tre
+    Statistics:  bft.STA

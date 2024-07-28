@@ -1,0 +1,179 @@
+004-005 @WRITE_PROGRAM_MEMORY8.P1
+004-005 @READ_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+015     CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+020-021 strtok.save
+022-025 _Randseed
+026-029 adc_value
+02A-02D adc_value1
+02E-031 adc_value2
+032-035 vout
+036-039 v1
+03A-03D v2
+03E-041 Rldr
+042-045 voltmeter1
+046-049 voltmeter2
+04A-04D ammeter1
+04E-051 ammeter2
+052-055 temperature
+056-059 LUX
+05A-05D pin
+05E-061 Pout
+062     MAIN.i
+063-066 @SFTOI.P1
+063     @PSTRINGCN7_903.P2
+063-066 @PRINTF_L32D_903FPFPF.P3
+063     lcd_line2.position
+063     lcd_line1.position
+063-064 @ITOF.P1
+063     lcd_rscrol.i
+063     lcd_init.@SCRATCH1
+063     MAIN.@SCRATCH1
+063     @PSTRINGC7_903.@SCRATCH1
+064     relay.threshold
+064     lcd_rscrol.count
+064     lcd_line1.@SCRATCH1
+064     lcd_line2.@SCRATCH1
+064     MAIN.@SCRATCH2
+064     @PSTRINGC7_903.@SCRATCH2
+064     @PSTRINGCN7_903.@SCRATCH1
+065     lcd_cmd.i
+065     lcd_rscrol.@SCRATCH1
+065     MAIN.@SCRATCH3
+065     @PSTRINGC7_903.@SCRATCH3
+065     @PSTRINGCN7_903.@SCRATCH2
+066     @delay_ms1.P1
+066     MAIN.@SCRATCH4
+066     @PSTRINGC7_903.@SCRATCH4
+066     @PSTRINGCN7_903.@SCRATCH3
+067-06A @ADDFF.P1
+067-06A @DIVFF.P2
+067     @PRINTF_L32D_903FPFPF.P3
+067     @PSTRINGCN7_903.@SCRATCH4
+068     @PRINTF_L32D_903FPFPF.@SCRATCH1
+069     @PRINTF_L32D_903FPFPF.@SCRATCH2
+06A     @PRINTF_L32D_903FPFPF.@SCRATCH3
+06B-06E @ADDFF.P1
+06B-06E @DIVFF.P2
+06B     @PRINTF_L32D_903FPFPF.@SCRATCH4
+06C     @PRINTF_L32D_903FPFPF.@SCRATCH5
+06D     @PRINTF_L32D_903FPFPF.@SCRATCH6
+06E     @PRINTF_L32D_903FPFPF.@SCRATCH7
+06F     @ADDFF.@SCRATCH1
+06F     @DIVFF.@SCRATCH1
+06F     @PRINTF_L32D_903FPFPF.@SCRATCH8
+070-073 @FTOSD.P1
+070     lcd_data.i
+070-073 @DIV3232.P1
+070-073 @MULFF.P2
+070     @ADDFF.@SCRATCH2
+070     @DIVFF.@SCRATCH2
+071     @ADDFF.@SCRATCH3
+071     @DIVFF.@SCRATCH3
+072     @ADDFF.@SCRATCH4
+072     @DIVFF.@SCRATCH4
+073     @ADDFF.@SCRATCH5
+073     @DIVFF.@SCRATCH5
+074     @ADDFF.@SCRATCH6
+074     @DIVFF.@SCRATCH6
+074     @FTOSD.@SCRATCH1
+075     @ADDFF.@SCRATCH7
+076     @ADDFF.@SCRATCH8
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+07B-07E @MULFF.P1
+07B-07E @DIV3232.P2
+0A0     @MULFF.@SCRATCH1
+0A0     @DIV3232.@SCRATCH1
+0A1     @MULFF.@SCRATCH2
+0A1     @DIV3232.@SCRATCH2
+0A2     @MULFF.@SCRATCH3
+0A2     @DIV3232.@SCRATCH3
+0A3     @MULFF.@SCRATCH4
+0A3     @DIV3232.@SCRATCH4
+0A4     @MULFF.@SCRATCH5
+0A4     @DIV3232.@SCRATCH5
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @const923.call
+000009  @const925.call
+000010  @const926.call
+000015  @const927.call
+00001A  @const930.call
+000021  @const941.call
+000028  @const942.call
+00002F  @const944.call
+000036  @const945.call
+00003D  @const946.call
+000044  @const948.call
+00004D  @const949.call
+000051  @const950.call
+000057  @delay_ms1
+00006B  lcd_cmd
+000082  lcd_init
+000098  lcd_line1
+00009E  lcd_data
+0000B5  @PSTRINGC7_903
+00010B  lcd_line2
+000111  lcd_rscrol
+000123  @ITOF
+000140  @MULFF
+0001C6  @DIVFF
+000290  @ADDFF
+0003D1  @SFTOI
+0003F2  relay
+000409  @PSTRINGCN7_903
+000460  @DIV3232
+0004B1  @PRINTF_L32D_903FPFPF
+0004D8  @FTOSD
+000800  MAIN
+000800  @cinit1
+000808  @cinit2
+0136  StrtoulGO
+0136  StrtolGO
+
+Project Directory:
+    E:\BEE-7D\Final Year Project\PIC Microcontroller\Mid_defence\
+
+Project Files:
+    mt.c                                                    [04-Mar-19 15:55  CRC=2D055DE1]
+    ..\..\..\..\Program Files (x86)\PIC\Devices\16F877.h    [12-Nov-13 14:35  CRC=ADB5114D]
+    ..\..\..\..\Program Files (x86)\PIC\Drivers\string.h    [29-Jan-19 17:28  CRC=5028CB2B]
+    ..\..\..\..\Program Files (x86)\PIC\Drivers\stddef.h    [16-Jul-10 09:27  CRC=897CEC6C]
+    ..\..\..\..\Program Files (x86)\PIC\Drivers\ctype.h     [03-Jan-08 13:55  CRC=2D1F019F]
+    ..\..\..\..\Program Files (x86)\PIC\Drivers\stdlib.h    [08-Jun-11 14:39  CRC=0B6669CF]
+
+Source signature=F84BFC02
+
+Units:
+    mt (main)
+
+Compiler Settings:
+    Processor:      PIC16F877
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   mt.xsym
+    Errors:      mt.err
+    Ext Symbols: mt.esym
+    INHX8:       mt.hex
+    Symbols:     mt.sym
+    List:        mt.lst
+    Debug/COFF:  mt.cof
+    Project:     mt.ccspjt
+    Call Tree:   mt.tre
+    Statistics:  mt.STA

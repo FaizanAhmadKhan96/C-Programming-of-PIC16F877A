@@ -1,0 +1,4 @@
+>>> Warning 202 "mkd.c" Line 17(7,15): Variable never used:   Pbattery
+      Memory usage:   ROM=21%      RAM=17% - 27%
+      0 Errors,  1 Warnings.
+Build Successful.

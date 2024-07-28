@@ -1,0 +1,19 @@
+[PROJECT]
+Target=rf.hex
+Processor_Text=PIC16F877A
+CCSVersion=5.015
+Compiler=PCM
+[Target Data]
+FileList=rf.c
+[Directories]
+Include=E:\Program Files (x86)\PIC\Devices\;E:\Program Files (x86)\PIC\Drivers\
+[rf.c]
+Type=4
+[mru-list]
+1=rf.c
+[Opened Files]
+1=rf.c
+2=
+[Units]
+Count=1
+1=rf (main)

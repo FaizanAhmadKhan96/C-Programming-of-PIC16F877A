@@ -1,0 +1,32 @@
+#include<16F877A.h>
+#fuses HS,NOWDT,NOLVP,BROWNOUT
+
+#define LED PIN_B0
+#define SW1 PIN_D0
+#define SW2 PIN_D1
+
+void main()
+{
+output_b(0b00000000);
+while(1)
+{
+
+if(input(SW1)==0)
+{
+output_high(LED);
+}
+else
+{
+output_low(LED);
+}
+
+if(input(SW2)==0)
+{
+output_high(LED);
+}
+else
+{
+output_low(LED);
+}
+}
+}

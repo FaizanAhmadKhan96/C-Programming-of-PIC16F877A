@@ -1,0 +1,222 @@
+CCS PCM C Compiler, Version 5.015, 5967               23-Dec-18 20:20
+
+               Filename:   E:\BEE-7D\Final Year Project\PIC Microcontroller\Full bridge1\cum.lst
+
+               ROM used:   165 words (2%)
+                           Largest free fragment is 2048
+               RAM used:   12 (3%) at main() level
+                           12 (3%) worst case
+               Stack used: 1 locations
+               Stack size: 8
+
+*
+0000:  MOVLW  00
+0001:  MOVWF  0A
+0002:  GOTO   018
+0003:  NOP
+.................... #include <16F877.h> 
+.................... //////////// Standard Header file for the PIC16F877 device //////////////// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... ////        (C) Copyright 1996, 2013 Custom Computer Services          //// 
+.................... //// This source code may only be used by licensed users of the CCS C  //// 
+.................... //// compiler.  This source code may only be distributed to other      //// 
+.................... //// licensed users of the CCS C compiler.  No other use, reproduction //// 
+.................... //// or distribution is permitted without written permission.          //// 
+.................... //// Derivative programs created using this software in object code    //// 
+.................... //// form are not restricted in any way.                               //// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... #device PIC16F877 
+....................  
+.................... #list 
+....................  
+.................... #device ADC = 10 
+.................... #fuses HS,BROWNOUT,NOWDT,NOLVP 
+.................... #use delay(clock=20M ) 
+0004:  MOVLW  25
+0005:  MOVWF  04
+0006:  BCF    03.7
+0007:  MOVF   00,W
+0008:  BTFSC  03.2
+0009:  GOTO   017
+000A:  MOVLW  06
+000B:  MOVWF  78
+000C:  CLRF   77
+000D:  DECFSZ 77,F
+000E:  GOTO   00D
+000F:  DECFSZ 78,F
+0010:  GOTO   00C
+0011:  MOVLW  7B
+0012:  MOVWF  77
+0013:  DECFSZ 77,F
+0014:  GOTO   013
+0015:  DECFSZ 00,F
+0016:  GOTO   00A
+0017:  RETURN
+....................  
+.................... unsigned int16 i, j ; 
+.................... void main(){ 
+0018:  MOVF   03,W
+0019:  ANDLW  1F
+001A:  MOVWF  03
+001B:  MOVLW  FF
+001C:  MOVWF  24
+001D:  BSF    03.5
+001E:  BSF    1F.0
+001F:  BSF    1F.1
+0020:  BSF    1F.2
+0021:  BCF    1F.3
+0022:  BCF    03.7
+....................   setup_adc(ADC_CLOCK_DIV_8);            // Set ADC conversion time to 8Tosc 
+0023:  BCF    03.5
+0024:  BSF    1F.6
+0025:  BCF    1F.7
+0026:  BSF    03.5
+0027:  BSF    1F.7
+0028:  BCF    03.5
+0029:  BSF    1F.0
+....................   setup_adc_ports(ALL_ANALOG);// Configure AN0 as analog input  
+002A:  BSF    03.5
+002B:  BCF    1F.0
+002C:  BCF    1F.1
+002D:  BCF    1F.2
+002E:  BCF    1F.3
+....................   setup_ccp1(CCP_PWM);// Configure CCP1 as standard PWM 
+002F:  BCF    03.5
+0030:  BCF    24.2
+0031:  MOVF   24,W
+0032:  BSF    03.5
+0033:  MOVWF  07
+0034:  BCF    03.5
+0035:  BCF    07.2
+0036:  MOVLW  0C
+0037:  MOVWF  17
+....................   delay_ms(1); 
+0038:  MOVLW  01
+0039:  MOVWF  25
+003A:  CALL   004
+....................   setup_ccp2(CCP_PWM);                   // Configure CCP2 as standard PWM 
+003B:  BCF    24.1
+003C:  MOVF   24,W
+003D:  BSF    03.5
+003E:  MOVWF  07
+003F:  BCF    03.5
+0040:  BCF    07.1
+0041:  MOVLW  0C
+0042:  MOVWF  1D
+....................   setup_timer_2(T2_DIV_BY_16, 250, 1);   // Set PWM frequency to 500Hz 
+0043:  MOVLW  00
+0044:  MOVWF  78
+0045:  IORLW  06
+0046:  MOVWF  12
+0047:  MOVLW  FA
+0048:  BSF    03.5
+0049:  MOVWF  12
+....................   delay_ms(100);                         // Wait 100ms 
+004A:  MOVLW  64
+004B:  BCF    03.5
+004C:  MOVWF  25
+004D:  CALL   004
+....................   while(TRUE){ 
+....................     set_adc_channel(0);                  // Select channel AN0 
+004E:  MOVLW  00
+004F:  MOVWF  78
+0050:  MOVF   1F,W
+0051:  ANDLW  C7
+0052:  IORWF  78,W
+0053:  MOVWF  1F
+....................     delay_ms(1);                         // Wait 1ms 
+0054:  MOVLW  01
+0055:  MOVWF  25
+0056:  CALL   004
+....................     i = read_adc();                      // Read from AN0 and store in i 
+0057:  BSF    1F.2
+0058:  BTFSC  1F.2
+0059:  GOTO   058
+005A:  BSF    03.5
+005B:  MOVF   1E,W
+005C:  BCF    03.5
+005D:  MOVWF  20
+005E:  MOVF   1E,W
+005F:  MOVWF  21
+....................     delay_ms(1);                         // Wait 1ms 
+0060:  MOVLW  01
+0061:  MOVWF  25
+0062:  CALL   004
+....................     set_adc_channel(1);                  // Select channel AN1 
+0063:  MOVLW  08
+0064:  MOVWF  78
+0065:  MOVF   1F,W
+0066:  ANDLW  C7
+0067:  IORWF  78,W
+0068:  MOVWF  1F
+....................     delay_ms(1);                         // Wait 1ms 
+0069:  MOVLW  01
+006A:  MOVWF  25
+006B:  CALL   004
+....................     j = read_adc();                      // Read from AN1 and store in j 
+006C:  BSF    1F.2
+006D:  BTFSC  1F.2
+006E:  GOTO   06D
+006F:  BSF    03.5
+0070:  MOVF   1E,W
+0071:  BCF    03.5
+0072:  MOVWF  22
+0073:  MOVF   1E,W
+0074:  MOVWF  23
+....................     set_pwm1_duty(i/2);// Set pwm1 duty cycle to i 
+0075:  BCF    03.0
+0076:  RRF    21,W
+0077:  MOVWF  26
+0078:  RRF    20,W
+0079:  MOVWF  25
+007A:  RRF    26,F
+007B:  RRF    25,F
+007C:  RRF    26,F
+007D:  RRF    25,F
+007E:  RRF    26,F
+007F:  MOVF   25,W
+0080:  MOVWF  15
+0081:  RRF    26,F
+0082:  RRF    26,W
+0083:  ANDLW  30
+0084:  MOVWF  77
+0085:  MOVF   17,W
+0086:  ANDLW  CF
+0087:  IORWF  77,W
+0088:  MOVWF  17
+....................     delay_ms(1); 
+0089:  MOVLW  01
+008A:  MOVWF  25
+008B:  CALL   004
+....................     set_pwm2_duty(j/2);                    // Set pwm2 duty cycle to j 
+008C:  BCF    03.0
+008D:  RRF    23,W
+008E:  MOVWF  26
+008F:  RRF    22,W
+0090:  MOVWF  25
+0091:  RRF    26,F
+0092:  RRF    25,F
+0093:  RRF    26,F
+0094:  RRF    25,F
+0095:  RRF    26,F
+0096:  MOVF   25,W
+0097:  MOVWF  1B
+0098:  RRF    26,F
+0099:  RRF    26,W
+009A:  ANDLW  30
+009B:  MOVWF  77
+009C:  MOVF   1D,W
+009D:  ANDLW  CF
+009E:  IORWF  77,W
+009F:  MOVWF  1D
+....................     delay_ms(1);                         // Wait 1ms 
+00A0:  MOVLW  01
+00A1:  MOVWF  25
+00A2:  CALL   004
+00A3:  GOTO   04E
+....................    } 
+.................... } 
+00A4:  SLEEP
+
+Configuration Fuses:
+   Word  1: 3F72   HS NOWDT PUT BROWNOUT NOLVP NOCPD NOWRT NODEBUG NOPROTECT

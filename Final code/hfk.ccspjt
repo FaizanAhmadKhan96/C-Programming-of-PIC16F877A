@@ -1,0 +1,19 @@
+[PROJECT]
+Target=hfk.hex
+Processor_Text=PIC16F877
+CCSVersion=5.015
+Compiler=PCM
+[Target Data]
+FileList=hfk.c
+[Directories]
+Include=E:\Program Files (x86)\PIC\Devices\;E:\Program Files (x86)\PIC\Drivers\
+[hfk.c]
+Type=4
+[mru-list]
+1=hfk.c
+[Opened Files]
+1=hfk.c
+2=
+[Units]
+Count=1
+1=hfk (main)

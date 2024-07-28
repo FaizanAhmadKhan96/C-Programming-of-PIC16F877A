@@ -1,0 +1,126 @@
+#if defined(__PCM__)
+#include <16F877.h>
+#device adc=10
+#fuses HS,NOWDT,NOPROTECT,NOLVP
+#use delay(clock=20000000)
+#endif
+
+#include <string.h>
+#include <stdlib.h>
+
+void main(void)
+{
+int pwm;
+int pwm_start=10;
+int pwm_min=6;
+int pwm_max=14;
+int delta=1;
+float voltageold;
+float currentold;
+float measuredvoltage;
+float measuredcurrent;
+float deltav;
+float deltai;
+float inc;
+float cond;
+
+voltageold=0;
+currentold=0;
+pwm=pwm_start;
+
+while(1)
+{ 
+setup_adc(ADC_CLOCK_DIV_8);   
+setup_adc_ports(ALL_ANALOG);   
+
+setup_ccp1(ccp_pwm);          /* setup pin CCP1 (RC2) to do PWM */
+
+setup_timer_2(T2_DIV_BY_1,19,1);   /* 50 KHZ */
+
+delay_ms(1000); 
+
+set_adc_channel(0);
+delay_us(100);
+
+adc_value = read_adc();
+
+measuredvoltage = (5.0*adc_value/1023.0)/0.111;
+
+ set_adc_channel(1);
+delay_us(100);
+
+adc_value = read_adc();
+
+measuredcurrent = ((5.0/1023.0*adc_value)-2.5)/0.066;
+
+deltav=measuredvoltage-voltageold;
+
+deltai=measuredcurrent-currentold;
+
+inc=deltai/deltav;
+
+cond=-(measuredcurrent/measuredvoltage);
+
+while(deltav==0)
+{
+if(deltai==0)
+{
+      pwm=pwm;
+}
+else
+{
+Do 
+{
+pwm=pwm-delta;
+}
+while(deltai>0);
+Do 
+{
+pwm=pwm+delta;
+}
+while(deltai<0);
+}
+}
+
+while(deltav!=0)
+{
+if(inc==cond)
+{
+      pwm=pwm;
+}
+else
+{
+Do 
+{
+pwm=pwm+delta;
+}
+while(inc>cond);
+Do 
+{
+pwm=pwm-delta;
+}
+while(inc<cond);
+}
+}
+
+voltageold =measuredvoltage;
+currentold=measuredcurrent;
+if (pwm<pwm_min)
+{
+pwm=pwm_min;
+set_pwm1_duty(pwm);
+}
+else if (pwm>pwm_max || pwm==pwm_max)
+{
+pwm=pwm_max;
+set_pwm1_duty(pwm);
+}
+else if (pwm<pwm_max && pwm>pwm_min)
+{
+pwm=pwm;
+set_pwm1_duty(pwm);
+}
+
+
+}
+}

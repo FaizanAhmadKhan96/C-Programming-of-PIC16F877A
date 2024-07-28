@@ -1,0 +1,19 @@
+[PROJECT]
+Target=kgd.hex
+Processor_Text=PIC16F877
+CCSVersion=5.015
+Compiler=PCM
+[Target Data]
+FileList=kgd.c
+[Directories]
+Include=E:\Program Files (x86)\PIC\Devices\;E:\Program Files (x86)\PIC\Drivers\
+[kgd.c]
+Type=4
+[mru-list]
+1=kgd.c
+[Opened Files]
+1=kgd.c
+2=
+[Units]
+Count=1
+1=kgd (main)

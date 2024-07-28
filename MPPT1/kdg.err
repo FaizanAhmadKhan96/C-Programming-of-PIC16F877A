@@ -1,0 +1,4 @@
+>>> Warning 202 "kdg.c" Line 10(7,16): Variable never used:   adc_value
+      Memory usage:   ROM=14%      RAM=12% - 21%
+      0 Errors,  1 Warnings.
+Build Successful.

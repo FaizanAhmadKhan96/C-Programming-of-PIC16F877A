@@ -1,0 +1,189 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020-021 strtok.save
+022-025 _Randseed
+026-029 PrevVsolar
+02A-02D PrevIsolar
+02E-031 PrevPsolar
+032-035 adc_value
+036-039 Vsolar
+03A-03D Vbattery
+03E-041 Isolar
+042-045 Ibattery
+046-049 pin
+04A-04D Pout
+04E-051 delta_V
+052-055 delta_P
+056-059 delta_I
+05A     pwm
+05B     pwm_start
+05C     pwm_min
+05D     pwm_max
+05E     delta
+05F     @TRIS_C
+060     MAIN.i
+061-064 MAIN.delta_P
+065-068 MAIN.delta_V
+069-06C MAIN.delta_I
+06D-070 MAIN.gradient
+071     MAIN.pwm
+072-075 @PRINTF_L32D_906FPFPF.P1
+072     lcd_rscrol.i
+072     @PSTRINGCN7_906.P1
+072     lcd_line2.position
+072     lcd_line1.position
+072     lcd_init.@SCRATCH1
+072     MAIN.@SCRATCH1
+072     @PSTRINGC7_906.@SCRATCH1
+073-074 @ITOF.P1
+073-076 @FLT.P2
+073     lcd_rscrol.count
+073     lcd_line1.@SCRATCH1
+073     lcd_line2.@SCRATCH1
+073     MAIN.@SCRATCH2
+073     @PSTRINGC7_906.@SCRATCH2
+073     @PSTRINGCN7_906.@SCRATCH1
+074     lcd_cmd.i
+074     lcd_rscrol.@SCRATCH1
+074     MAIN.@SCRATCH3
+074     @PSTRINGC7_906.@SCRATCH3
+074     @PSTRINGCN7_906.@SCRATCH2
+075     @delay_ms1.P1
+075     MAIN.@SCRATCH4
+075     @PSTRINGC7_906.@SCRATCH4
+075     @PSTRINGCN7_906.@SCRATCH3
+076     @PRINTF_L32D_906FPFPF.P1
+076     @PSTRINGCN7_906.@SCRATCH4
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+07B-07E @ADDFF.P1
+07B-07E @FLT.P2
+07B-07E @DIVFF.P3
+0A0-0A3 @DIVFF.P1
+0A0-0A3 @ADDFF.P2
+0A0     @PRINTF_L32D_906FPFPF.@SCRATCH1
+0A0     @FLT.@SCRATCH1
+0A1     @PRINTF_L32D_906FPFPF.@SCRATCH2
+0A1     @FLT.@SCRATCH2
+0A2     @PRINTF_L32D_906FPFPF.@SCRATCH3
+0A3     @PRINTF_L32D_906FPFPF.@SCRATCH4
+0A4     @ADDFF.@SCRATCH1
+0A4     @DIVFF.@SCRATCH1
+0A4     @PRINTF_L32D_906FPFPF.@SCRATCH5
+0A5     @ADDFF.@SCRATCH2
+0A5     @DIVFF.@SCRATCH2
+0A5     @PRINTF_L32D_906FPFPF.@SCRATCH6
+0A6     @ADDFF.@SCRATCH3
+0A6     @DIVFF.@SCRATCH3
+0A6     @PRINTF_L32D_906FPFPF.@SCRATCH7
+0A7     @ADDFF.@SCRATCH4
+0A7     @DIVFF.@SCRATCH4
+0A7     @PRINTF_L32D_906FPFPF.@SCRATCH8
+0A8-0AB @FTOSD.P1
+0A8-0AB @DIV3232.P2
+0A8     lcd_data.i
+0A8-0AB @MULFF.P1
+0A8     @ADDFF.@SCRATCH5
+0A8     @DIVFF.@SCRATCH5
+0A9     @ADDFF.@SCRATCH6
+0A9     @DIVFF.@SCRATCH6
+0AA     @ADDFF.@SCRATCH7
+0AB     @ADDFF.@SCRATCH8
+0AC-0AF @MULFF.P1
+0AC-0AF @DIV3232.P2
+0AC     @FTOSD.@SCRATCH1
+0B0     @MULFF.@SCRATCH1
+0B0     @DIV3232.@SCRATCH1
+0B1     @MULFF.@SCRATCH2
+0B1     @DIV3232.@SCRATCH2
+0B2     @MULFF.@SCRATCH3
+0B2     @DIV3232.@SCRATCH3
+0B3     @MULFF.@SCRATCH4
+0B3     @DIV3232.@SCRATCH4
+0B4     @MULFF.@SCRATCH5
+0B4     @DIV3232.@SCRATCH5
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @const925.call
+000008  @const927.call
+000010  @const928.call
+000017  @const929.call
+00001C  @const930.call
+000023  @const931.call
+000028  @const932.call
+00002D  @const933.call
+000034  @const944.call
+00003B  @const945.call
+000042  @const947.call
+000049  @const948.call
+000050  @const949.call
+000057  @delay_ms1
+00006B  lcd_cmd
+000082  lcd_init
+000098  lcd_line1
+00009E  lcd_data
+0000B5  @PSTRINGC7_906
+000109  lcd_line2
+00010F  lcd_rscrol
+000121  @ITOF
+00013E  @MULFF
+0001B5  @DIVFF
+00028E  @ADDFF
+0003D4  @PSTRINGCN7_906
+00042E  @DIV3232
+00047F  @PRINTF_L32D_906FPFPF
+0004A9  @FTOSD
+000573  @FLT
+000800  @cinit1
+000800  MAIN
+00081E  @cinit2
+0136  StrtoulGO
+0136  StrtolGO
+
+Project Directory:
+    E:\BEE-7D\Final Year Project\PIC Microcontroller\Final code\
+
+Project Files:
+    hfk.c                                                   [01-May-19 13:35  CRC=8E1B90F3]
+    ..\..\..\..\Program Files (x86)\PIC\Devices\16F877.h    [12-Nov-13 14:35  CRC=ADB5114D]
+    ..\..\..\..\Program Files (x86)\PIC\Drivers\string.h    [29-Jan-19 17:28  CRC=5028CB2B]
+    ..\..\..\..\Program Files (x86)\PIC\Drivers\stddef.h    [16-Jul-10 09:27  CRC=897CEC6C]
+    ..\..\..\..\Program Files (x86)\PIC\Drivers\ctype.h     [03-Jan-08 13:55  CRC=2D1F019F]
+    ..\..\..\..\Program Files (x86)\PIC\Drivers\stdlib.h    [08-Jun-11 14:39  CRC=0B6669CF]
+
+Source signature=59622F14
+
+Units:
+    hfk (main)
+
+Compiler Settings:
+    Processor:      PIC16F877
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   hfk.xsym
+    Errors:      hfk.err
+    Ext Symbols: hfk.esym
+    INHX8:       hfk.hex
+    Symbols:     hfk.sym
+    List:        hfk.lst
+    Debug/COFF:  hfk.cof
+    Project:     hfk.ccspjt
+    Call Tree:   hfk.tre
+    Statistics:  hfk.STA

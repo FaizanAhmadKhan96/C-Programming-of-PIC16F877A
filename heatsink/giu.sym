@@ -1,0 +1,124 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+020-021 adc_value
+022-025 temperature
+026     @TRIS_C
+027-02A @PRINTF_L32D_617FPFPF.P1
+027-028 @ITOF.P2
+027-02A @FLT.P3
+027     @PSTRINGCN7_617.P4
+027     lcd_line1.position
+027     lcd_init.@SCRATCH1
+027     MAIN.@SCRATCH1
+028     @delay_ms1.P1
+028     lcd_line1.@SCRATCH1
+028     MAIN.@SCRATCH2
+028     @PSTRINGCN7_617.@SCRATCH1
+029     lcd_cmd.i
+029     MAIN.@SCRATCH3
+029     @PSTRINGCN7_617.@SCRATCH2
+02A     MAIN.@SCRATCH4
+02A     @PSTRINGCN7_617.@SCRATCH3
+02B     @PRINTF_L32D_617FPFPF.P1
+02B-02E @DIVFF.P2
+02B-02E @FLT.P3
+02B     @PSTRINGCN7_617.@SCRATCH4
+02C     @PRINTF_L32D_617FPFPF.@SCRATCH1
+02D     @PRINTF_L32D_617FPFPF.@SCRATCH2
+02E     @PRINTF_L32D_617FPFPF.@SCRATCH3
+02F-032 @DIVFF.P1
+02F     @PRINTF_L32D_617FPFPF.@SCRATCH4
+02F     @FLT.@SCRATCH1
+030     @PRINTF_L32D_617FPFPF.@SCRATCH5
+030     @FLT.@SCRATCH2
+031     @PRINTF_L32D_617FPFPF.@SCRATCH6
+032     @PRINTF_L32D_617FPFPF.@SCRATCH7
+033     @DIVFF.@SCRATCH1
+033     @PRINTF_L32D_617FPFPF.@SCRATCH8
+034-037 @FTOSD.P1
+034-037 @MULFF.P2
+034-037 @DIV3232.P3
+034     lcd_data.i
+034     @DIVFF.@SCRATCH2
+035     @DIVFF.@SCRATCH3
+036     @DIVFF.@SCRATCH4
+037     @DIVFF.@SCRATCH5
+038-03B @DIV3232.P1
+038-03B @MULFF.P2
+038     @DIVFF.@SCRATCH6
+038     @FTOSD.@SCRATCH1
+03C     @MULFF.@SCRATCH1
+03C     @DIV3232.@SCRATCH1
+03D     @MULFF.@SCRATCH2
+03D     @DIV3232.@SCRATCH2
+03E     @MULFF.@SCRATCH3
+03E     @DIV3232.@SCRATCH3
+03F     @MULFF.@SCRATCH4
+03F     @DIV3232.@SCRATCH4
+040     @MULFF.@SCRATCH5
+040     @DIV3232.@SCRATCH5
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @const642.call
+00000A  @delay_ms1
+00001E  lcd_cmd
+000035  lcd_init
+00004B  lcd_line1
+000053  @ITOF
+000072  @MULFF
+0000E7  @DIVFF
+0001B1  lcd_data
+0001C8  @PSTRINGCN7_617
+000221  @DIV3232
+000270  @PRINTF_L32D_617FPFPF
+000297  @FTOSD
+000352  @FLT
+000393  MAIN
+000393  @cinit1
+00039D  @cinit2
+
+Project Directory:
+    E:\BEE-7D\Final Year Project\PIC Microcontroller\heatsink\
+
+Project Files:
+    giu.c                                                   [14-Mar-19 08:48  CRC=881FADD3]
+    ..\..\..\..\Program Files (x86)\PIC\Devices\16F877.h    [12-Nov-13 14:35  CRC=ADB5114D]
+
+Source signature=E389D06D
+
+Units:
+    giu (main)
+
+Compiler Settings:
+    Processor:      PIC16F877
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   giu.xsym
+    Errors:      giu.err
+    Ext Symbols: giu.esym
+    INHX8:       giu.hex
+    Symbols:     giu.sym
+    List:        giu.lst
+    Debug/COFF:  giu.cof
+    Project:     giu.ccspjt
+    Call Tree:   giu.tre
+    Statistics:  giu.STA

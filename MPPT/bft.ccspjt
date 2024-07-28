@@ -1,0 +1,20 @@
+[PROJECT]
+Target=bft.hex
+Processor_Text=PIC16F877
+CCSVersion=5.015
+Compiler=PCM
+[Target Data]
+FileList=bft.c
+[Directories]
+Include=E:\Program Files (x86)\PIC\Devices\;E:\Program Files (x86)\PIC\Drivers\
+[bft.c]
+Type=4
+[mru-list]
+1=bft.c
+[Opened Files]
+1=bft.c
+2=
+3=
+[Units]
+Count=1
+1=bft (main)

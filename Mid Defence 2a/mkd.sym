@@ -1,0 +1,123 @@
+004-005 @WRITE_PROGRAM_MEMORY8.P1
+004-005 @READ_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020-021 strtok.save
+022-025 _Randseed
+026-029 adc_value
+02A-02D Vsolar
+02E-031 Isolar
+032-035 Psolar
+036-039 Vbattery
+03A-03D Ibattery
+03E-041 Pbattery
+042-045 PrevVsolar
+046-049 PrevIsolar
+04A-04D PrevPsolar
+04E     pwm
+04F     pwm_start
+050     pwm_min
+051     pwm_max
+052     delta
+053     @TRIS_C
+054-057 MAIN.delta_P
+058-05B MAIN.delta_V
+05C-05F MAIN.delta_I
+060-063 MAIN.gradient
+064     MAIN.pwm
+065-068 @FLT.P1
+065-068 @MULFF.P2
+065-066 @ITOF.P3
+065     MAIN.@SCRATCH1
+066     MAIN.@SCRATCH2
+067     MAIN.@SCRATCH3
+068     MAIN.@SCRATCH4
+069-06C @MULFF.P1
+069-06C @FLT.P2
+069-06C @DIVFF.P3
+069-06C @ADDFF.P4
+06D-070 @ADDFF.P1
+06D-070 @DIVFF.P2
+06D     @MULFF.@SCRATCH1
+06D     @FLT.@SCRATCH1
+06E     @MULFF.@SCRATCH2
+06E     @FLT.@SCRATCH2
+06F     @MULFF.@SCRATCH3
+070     @MULFF.@SCRATCH4
+071     @MULFF.@SCRATCH5
+071     @DIVFF.@SCRATCH1
+072     @DIVFF.@SCRATCH2
+073     @DIVFF.@SCRATCH3
+074     @DIVFF.@SCRATCH4
+075     @DIVFF.@SCRATCH5
+076     @DIVFF.@SCRATCH6
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+09C.6   C1OUT
+09C.7   C2OUT
+0A0     @ADDFF.@SCRATCH1
+0A1     @ADDFF.@SCRATCH2
+0A2     @ADDFF.@SCRATCH3
+0A3     @ADDFF.@SCRATCH4
+0A4     @ADDFF.@SCRATCH5
+0A5     @ADDFF.@SCRATCH6
+0A6     @ADDFF.@SCRATCH7
+0A7     @ADDFF.@SCRATCH8
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @ITOF
+000021  @MULFF
+000096  @DIVFF
+000160  @ADDFF
+0002D1  @FLT
+000310  @cinit1
+000310  MAIN
+000330  @cinit2
+0136  StrtoulGO
+0136  StrtolGO
+
+Project Directory:
+    E:\BEE-7D\Final Year Project\PIC Microcontroller\Mid Defence 2a\
+
+Project Files:
+    mkd.c                                                   [17-Feb-19 19:00  CRC=150A2779]
+    ..\..\..\..\Program Files (x86)\PIC\Devices\16F877A.h   [01-Feb-19 20:16  CRC=81334808]
+    ..\..\..\..\Program Files (x86)\PIC\Drivers\string.h    [29-Jan-19 17:28  CRC=5028CB2B]
+    ..\..\..\..\Program Files (x86)\PIC\Drivers\stddef.h    [16-Jul-10 09:27  CRC=897CEC6C]
+    ..\..\..\..\Program Files (x86)\PIC\Drivers\ctype.h     [03-Jan-08 13:55  CRC=2D1F019F]
+    ..\..\..\..\Program Files (x86)\PIC\Drivers\stdlib.h    [08-Jun-11 14:39  CRC=0B6669CF]
+
+Source signature=B3CEFC55
+
+Units:
+    mkd (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   mkd.xsym
+    Errors:      mkd.err
+    Ext Symbols: mkd.esym
+    INHX8:       mkd.hex
+    Symbols:     mkd.sym
+    List:        mkd.lst
+    Debug/COFF:  mkd.cof
+    Project:     mkd.ccspjt
+    Call Tree:   mkd.tre
+    Statistics:  mkd.STA

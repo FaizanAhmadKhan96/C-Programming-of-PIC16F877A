@@ -1,0 +1,26 @@
+*** Error 18 "hfk.c" Line 2(10,20): File can not be opened
+    Not in "E:\Program Files (x86)\PIC\Devices\16F877.h"
+    Not in "E:\Program Files (x86)\PIC\Drivers\16F877.h"
+    Not in local "16F877.h"
+    Not in local "E:\Academic data\BEE 2019\BEE-7D\Final Year Project\PIC Microcontroller\Final code\16F877.h"
+    Not in last "16F877.h"
+    Not in project "E:\Academic data\BEE 2019\BEE-7D\Final Year Project\PIC Microcontroller\Final code\16F877.h"
+*** Error 128 "hfk.c" Line 3(9,15): A #DEVICE required before this line
+*** Error 128 "hfk.c" Line 4(7,31): A #DEVICE required before this line
+*** Error 18 "hfk.c" Line 7(10,20): File can not be opened
+    Not in "E:\Program Files (x86)\PIC\Devices\string.h"
+    Not in "E:\Program Files (x86)\PIC\Drivers\string.h"
+    Not in local "string.h"
+    Not in local "E:\Academic data\BEE 2019\BEE-7D\Final Year Project\PIC Microcontroller\Final code\string.h"
+    Not in last "string.h"
+    Not in project "E:\Academic data\BEE 2019\BEE-7D\Final Year Project\PIC Microcontroller\Final code\string.h"
+*** Error 18 "hfk.c" Line 8(10,20): File can not be opened
+    Not in "E:\Program Files (x86)\PIC\Devices\stdlib.h"
+    Not in "E:\Program Files (x86)\PIC\Drivers\stdlib.h"
+    Not in local "stdlib.h"
+    Not in local "E:\Academic data\BEE 2019\BEE-7D\Final Year Project\PIC Microcontroller\Final code\stdlib.h"
+    Not in last "stdlib.h"
+    Not in project "E:\Academic data\BEE 2019\BEE-7D\Final Year Project\PIC Microcontroller\Final code\stdlib.h"
+*** Error 128 "hfk.c" Line 28(9,15): A #DEVICE required before this line
+      6 Errors,  0 Warnings.
+Build Failed.

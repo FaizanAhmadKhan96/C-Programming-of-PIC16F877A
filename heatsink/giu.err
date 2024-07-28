@@ -1,0 +1,4 @@
+>>> Warning 203 "giu.c" Line 94(1,1): Condition always TRUE
+      Memory usage:   ROM=13%      RAM=4% - 10%
+      0 Errors,  1 Warnings.
+Build Successful.

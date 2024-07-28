@@ -1,0 +1,48 @@
+V G "Vbattery" 0 29 "float" `43 
+D G "__PCM__" 0 30 ""5.015""
+D G "__DEVICE__" 0 30 ""
+D G "__DATE__" 0 30 ""06-Nov-20""
+D G "__TIME__" 0 30 ""07:50:09""
+D G "lcd_rs" 0 9 "pin_d0"
+D G "lcd_en" 0 10 "pin_d1"
+D G "sd" 0 11 "pin_c0"
+D G "on" 0 12 "output_high"
+D G "off" 0 13 "output_low"
+D G "fan" 0 14 "pin_d7"
+D G "relay" 0 15 "pin_d6"
+D G "green" 0 16 "pin_d5"
+D G "yellow2" 0 17 "pin_d4"
+D G "yellow1" 0 18 "pin_c7"
+D G "red" 0 19 "pin_c6"
+D G "WAPDA" 0 20 "pin_d3"
+D G "solar" 0 21 "pin_d2"
+D G "disp_clear" 0 22 "0b00000001"
+D G "disp_control" 0 23 "0b00001110"
+D G "func_set" 0 24 "0b00111000"
+D G "lscrol" 0 25 "0b00011000"
+D G "rscrol" 0 26 "0b00011100"
+D G "line1" 0 27 "0b10000000"
+D G "line2" 0 28 "0b11000000"
+V G "PrevVsolar" 0 29 "float" `38 
+V G "PrevIsolar" 0 29 "float" `39 
+V G "PrevPsolar" 0 29 "float" `40 
+V G "adc_value" 0 29 "float" `41 
+V G "Vsolar" 0 29 "float" `42 
+F B "delay_ms" 1 0
+F B "delay_us" 1 0
+F B "delay_ms" 1 0
+F B "delay_us" 1 0
+F B "delay_ms" 1 0
+F B "delay_us" 1 0
+F B "delay_ms" 1 0
+F B "delay_us" 1 0
+F B "delay_ms" 1 0
+F B "delay_us" 1 0
+F B "delay_ms" 1 0
+F B "delay_us" 1 0
+F B "delay_ms" 1 0
+F B "delay_us" 1 0
+F B "delay_ms" 1 0
+F B "delay_us" 1 0
+F B "delay_ms" 1 0
+F B "delay_us" 1 0

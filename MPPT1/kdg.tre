@@ -1,0 +1,17 @@
+읕kdg
+   읕MAIN  0/539  Ram=1
+      쳐@cinit1  (Inline)  Ram=0
+      쳐@delay_ms1  0/20  Ram=1
+      쳐@delay_ms1  0/20  Ram=1
+      쳐@ITOF  0/29  Ram=2
+      쳐@delay_ms1  0/20  Ram=1
+      쳐@ITOF  0/29  Ram=2
+      쳐@ADDFF  0/321  Ram=16
+      쳐@ADDFF  0/321  Ram=16
+      쳐@ADDFF  0/321  Ram=16
+      쳐@DIVFF  0/204  Ram=14
+      쳐@FLT  0/63  Ram=10
+      쳐@FLT  0/63  Ram=10
+      쳐@FLT  0/63  Ram=10
+      쳐@FLT  0/63  Ram=10
+      읕@FLT  0/63  Ram=10

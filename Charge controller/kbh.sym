@@ -1,0 +1,195 @@
+004-005 @WRITE_PROGRAM_MEMORY8.P1
+004-005 @READ_PROGRAM_MEMORY8.P2
+006     lcd
+008     PSP_DATA
+015     CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020     lcdline
+021     @TRIS_C
+022-025 Voltage_pv
+026-029 Voltage_bat
+02A-02D Current_pv
+02E-031 Current_bat
+032-035 Current_ch
+036-039 Temperature
+03A-03D Voltage_absorption
+03E-041 Voltage_float
+042-045 alpha
+046     duty
+047     choice_bat
+048     lcd_init.i
+048-04B @DIVFF.P1
+048-049 @PWM_SET_DUTY_PERCENT_HW_1.P2
+048-04B @SFTOI.P3
+048-04B @FLT.P4
+048     DisplayFormat.@SCRATCH1
+048     @PSTRINGC7_644.@SCRATCH1
+048     Mesure.@SCRATCH1
+048     MAIN.@SCRATCH1
+049     lcd_init.@SCRATCH1
+049     DisplayFormat.@SCRATCH2
+049     @PSTRINGC7_644.@SCRATCH2
+049     Mesure.@SCRATCH2
+04A     DisplayFormat.@SCRATCH3
+04A     @PSTRINGC7_644.@SCRATCH3
+04A     Mesure.@SCRATCH3
+04A     @PWM_SET_DUTY_PERCENT_HW_1.@SCRATCH1
+04B-04E @MUL3232.P1
+04B     DisplayFormat.@SCRATCH4
+04B     @PSTRINGC7_644.@SCRATCH4
+04B     Mesure.@SCRATCH4
+04B     @PWM_SET_DUTY_PERCENT_HW_1.@SCRATCH2
+04C-04F @DIVFF.P1
+04C-04F @FLT.P2
+04C-04F @ADDFF.P3
+04C     @PSTRINGCN7_644.P4
+04C-04F @PRINTF_L32D_644FPFPF.P5
+04C-04D @ITOF.P6
+04D     @PSTRINGCN7_644.@SCRATCH1
+04E     @PSTRINGCN7_644.@SCRATCH2
+04F-052 @MUL3232.P1
+04F     @PSTRINGCN7_644.@SCRATCH3
+050-053 @ADDFF.P1
+050     @PRINTF_L32D_644FPFPF.P2
+050     @PSTRINGCN7_644.@SCRATCH4
+050     @FLT.@SCRATCH1
+050     @DIVFF.@SCRATCH1
+051     @PRINTF_L32D_644FPFPF.@SCRATCH1
+051     @FLT.@SCRATCH2
+051     @DIVFF.@SCRATCH2
+052     @PRINTF_L32D_644FPFPF.@SCRATCH2
+052     @DIVFF.@SCRATCH3
+053     @PRINTF_L32D_644FPFPF.@SCRATCH3
+053     @DIVFF.@SCRATCH4
+053     @MUL3232.@SCRATCH1
+054     @PRINTF_L32D_644FPFPF.@SCRATCH4
+054     @DIVFF.@SCRATCH5
+054     @ADDFF.@SCRATCH1
+054     @MUL3232.@SCRATCH2
+055     @PRINTF_L32D_644FPFPF.@SCRATCH5
+055     @DIVFF.@SCRATCH6
+055     @ADDFF.@SCRATCH2
+055     @MUL3232.@SCRATCH3
+056     @PRINTF_L32D_644FPFPF.@SCRATCH6
+056     @ADDFF.@SCRATCH3
+056     @MUL3232.@SCRATCH4
+057     @PRINTF_L32D_644FPFPF.@SCRATCH7
+057     @ADDFF.@SCRATCH4
+057     @MUL3232.@SCRATCH5
+058     @PRINTF_L32D_644FPFPF.@SCRATCH8
+058     @ADDFF.@SCRATCH5
+059     lcd_putc.c
+059-05C @DIV3232.P1
+059-05C @MULFF.P2
+059-05C @FTOSD.P3
+059     @ADDFF.@SCRATCH6
+05A     lcd_gotoxy.x
+05A     @delay_ms1.P1
+05A     @ADDFF.@SCRATCH7
+05B     lcd_gotoxy.y
+05B     @ADDFF.@SCRATCH8
+05C     lcd_gotoxy.address
+05D-060 @DIV3232.P1
+05D-060 @MULFF.P2
+05D     lcd_send_byte.address
+05D     @FTOSD.@SCRATCH1
+05E     lcd_send_byte.n
+05F     lcd_read_byte.low
+05F     lcd_send_byte.@SCRATCH1
+060     lcd_send_nibble.n
+060     lcd_read_byte.high
+061     lcd_read_byte.@SCRATCH1
+061     @MULFF.@SCRATCH1
+061     @DIV3232.@SCRATCH1
+062     @MULFF.@SCRATCH2
+062     @DIV3232.@SCRATCH2
+063     @MULFF.@SCRATCH3
+063     @DIV3232.@SCRATCH3
+064     @MULFF.@SCRATCH4
+064     @DIV3232.@SCRATCH4
+065     @MULFF.@SCRATCH5
+065     @DIV3232.@SCRATCH5
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  LCD_INIT_STRING.call
+000008  LCD_INIT_STRING.data
+00000C  @const665.call
+000012  @const679.call
+000018  @const683.call
+000020  @const684.call
+000028  @const685.call
+00002E  @const686.call
+000036  @const687.call
+00003D  @const688.call
+000046  @const709.call
+000050  @const710.call
+000059  @delay_ms1
+00006D  lcd_send_nibble
+00007E  lcd_send_byte
+00007F  lcd_read_byte
+0000BA  lcd_init
+0000E6  lcd_gotoxy
+000100  @goto10596
+000108  lcd_putc
+00012F  @ITOF
+00014C  @DIVFF
+000216  @MULFF
+00028B  @ADDFF
+0003CC  Mesure
+0006A9  @FLT
+0006E8  @SFTOI
+000707  @DIV3232
+000756  @PWM_SET_DUTY_PERCENT_HW_1
+00076F  @MUL3232
+000800  @PSTRINGCN7_644
+00085B  @PRINTF_L32D_644FPFPF
+000884  @FTOSD
+000949  @PSTRINGC7_644
+0009A3  DisplayFormat
+000B16  @cinit1
+000B16  MAIN
+000B2F  @cinit2
+
+Project Directory:
+    E:\BEE-7D\Final Year Project\PIC Microcontroller\Charge controller\
+
+Project Files:
+    kbh.c                                                   [02-Feb-19 18:56  CRC=04826D4D]
+    ..\..\..\..\Program Files (x86)\PIC\Devices\16F877.h    [12-Nov-13 14:35  CRC=ADB5114D]
+    ..\..\..\..\Program Files (x86)\PIC\Drivers\LCD420.c    [14-Apr-09 10:58  CRC=C5A307B3]
+
+Source signature=3D7D8E00
+
+Units:
+    kbh (main)
+
+Compiler Settings:
+    Processor:      PIC16F877
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   kbh.xsym
+    Errors:      kbh.err
+    Ext Symbols: kbh.esym
+    INHX8:       kbh.hex
+    Symbols:     kbh.sym
+    List:        kbh.lst
+    Debug/COFF:  kbh.cof
+    Project:     kbh.ccspjt
+    Call Tree:   kbh.tre
+    Statistics:  kbh.STA

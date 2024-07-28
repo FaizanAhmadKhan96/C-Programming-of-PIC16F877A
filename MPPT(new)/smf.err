@@ -1,0 +1,4 @@
+>>> Warning 203 "smf.c" Line 145(1,1): Condition always TRUE
+      Memory usage:   ROM=42%      RAM=21% - 32%
+      0 Errors,  1 Warnings.
+Build Successful.

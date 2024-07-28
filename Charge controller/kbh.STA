@@ -1,0 +1,82 @@
+
+ROM used:   3517/8192 (43%)
+            3588/8192 (44%) including unused fragments
+
+            3.5 Average locations per line
+            16.9 Average locations per statement
+
+RAM used:   46/368 (12%) at main() level
+            75/368 (20%) worst case
+
+Stack used: 6 worst case (6 in main + 0 for interrupts)
+Stack size: 8
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  193   140  67  kbh.c
+  639     0   0  ..\..\..\..\Program Files (x86)\PIC\Devices\16F877.h
+  162    68  33  ..\..\..\..\Program Files (x86)\PIC\Drivers\LCD420.c
+----- -----
+  994   208 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     20   1    1             @delay_ms1
+0      8   0    0             @const621
+ Inline         3   463  4.3  lcd_read_byte
+0     17   0    1   134  2.2  lcd_send_nibble
+0     60   2    3   317  4.3  lcd_send_byte
+0     44   1    2   422  4.7  lcd_init
+0     26   1    3   321  5.5  lcd_gotoxy
+0      8   0    0             @goto10596
+0     39   1    1   308  5.0  lcd_putc
+1    371  11    4   915  5.7  DisplayFormat
+0      6   0    0             @const665
+1     91   3    5             @PSTRINGCN7_644
+0    117   3   13             @MULFF
+ Inline         5             @FTOSD
+0     79   2   13             @DIV3232
+1    238   7   13             @PRINTF_L32D_644FPFPF
+0      6   0    0             @const679
+0     63   2   10             @FLT
+0      8   0    0             @const683
+0      8   0    0             @const684
+0      6   0    0             @const685
+0      8   0    0             @const686
+0      7   0    0             @const687
+0      9   0    0             @const688
+1     90   3    4             @PSTRINGC7_644
+0    733  21    4  1279  3.4  Mesure
+0     29   1    2             @ITOF
+0    202   6   14             @DIVFF
+0    321   9   16             @ADDFF
+1    750  21    1  2501  7.3  MAIN
+0     31   1    4             @SFTOI
+ Inline        13             @MUL3232
+0     99   3    3             @PWM_SET_DUTY_PERCENT_HW_1
+0     10   0    0             @const709
+0      9   0    0             @const710
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               9
+    Statements              208
+    Comments                167
+    Volume (V)              9659
+    Difficulty (D)          40.5
+    Effort to implement (E) 391587
+    Time to implement (T)   6 hours, 3 minutes
+    Est Delivered Bugs (B)  2
+    Cyclomatic Complexity   15
+    Maintainability (MI)    102
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-007FF  1973  71  
+00800-00FFF  1540  508  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+
